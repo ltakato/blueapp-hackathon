@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.min.css">
+        <link rel="stylesheet" type="text/css" href="framework7/css/framework7.ios.colors.min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+
+        <script src="js/init-app.js"></script>
+        <script src="xdk/init-dev.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="framework7/js/framework7.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/fw7_subpage.js"></script>
+        <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?key= AIzaSyC00oghwGFBWBgo6mJDlSRV-cp1dDzaxHU &amp;sensor=true"></script>
+        <script type="application/javascript" src="google_maps/google_maps.js"></script>
+        <script type="application/javascript" src="js/funcoes.js"></script>
+    </head>
+
+    <body>
+        <div class="uwrap views">
+
+            <!-- PAGE LOGIN INI -->
+            <div class="upage vertical-col left view-main view" id="mainpage">
+                <div class="pages">
+
+                    <div class="page toolbar-fixed">
+                        <div class="page-content upage-content content-area" id="page_93_84"><a href="#home" class="button widget uib_w_1 d-margins" data-uib="framework7/button" data-ver="0" id="btn_logar"><span>Button</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- PAGE LOGIN END -->
+
+            <!-- PAGE HOME INI -->
+            <div class="upage vertical-col left hidden view" id="home">
+                <div class="pages">
+
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_2" data-uib="framework7/header" data-ver="0">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                                <div class="center labeltext">Home</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content upage-content content-area" id="page_94_35">
+
+                            <div class="card widget uib_w_3 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Diabetes</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Card with header and footer. Card header is used to display card title and footer for some additional information or for custom actions.</div>
+                                </div>
+                                <div class="card-footer"><a href="#" id="btn_diabetes">Entrar</a>
+                                </div>
+                            </div>
+
+                            <div class="card widget uib_w_4 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Câncer de Prostata</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Card with header and footer. Card header is used to display card title and footer for some additional information or for custom actions.</div>
+                                </div>
+                                <div class="card-footer"><a href="#" id="btn_cancer">Entrar</a>
+                                </div>
+                            </div>
+
+                            <div class="card widget uib_w_7 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Outros</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Card with header and footer. Card header is used to display card title and footer for some additional information or for custom actions.</div>
+                                </div>
+                                <div class="card-footer"><a href="#" id="btn_outros">Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- PAGE HOME END -->
+
+            <!-- PAGE DIABETES INI -->
+            <div class="upage vertical-col left hidden view" id="diabetes">
+                <div class="pages">
+
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_5" data-uib="framework7/header" data-ver="0">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <a href="#" id="btn_voltar" class="link icon-only">
+                                        <i class="icon icon-back"></i>
+                                    </a>
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                                <div class="center labeltext">Diabetes</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content upage-content content-area" id="page_100_61">
+                            <div class="card widget uib_w_10 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Sintomas</div>
+                                <div class="card-footer"><a href="" id="btn_sintomas">Visualizar</a>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_11 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Causas</div>
+                                <div class="card-footer"><a href="#" id="btn_causas">Visualizar</a>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Tratamentos</div>
+                                <div class="card-footer"><a href="#" id="btn_tratamentos">Visualizar</a>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Consequências</div>
+                                <div class="card-footer"><a href="#" id="btn_consequencias">Visualizar</a>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Informações</div>
+                                <div class="card-footer"><a href="#" id="btn_info">Visualizar</a>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Farmácias e Clinicas</div>
+                                <div class="card-footer"><a href="#" id="btn_maps">Visualizar</a>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="toolbar inner-element uib_w_6" data-uib="framework7/footer" data-ver="0" id="footer">
+                            <div class="toolbar-inner container-group">
+                                <a href="" id="btn_informacoes">Informações</a>
+                                <a href="" id="btn_recomendacoes">Recomendações</a>
+                                <a href="" id="btn_noticias">Notícias</a>
+                            </div>
+                        </div>
+
+                        <!-- SUBPAGE RECOMENDACOES INI-->
+                        <div id="recomendacoes" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Receitas</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Content block</div>
+                                </div>
+                                <div class="card-footer"><a href="#" id="btn_receitas">Visualizar</a>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Alimentação</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Content block</div>
+                                </div>
+                                <div class="card-footer"><a href="#" id="btn_alimentacao">Visualizar</a>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Prevenção</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Content block</div>
+                                </div>
+                                <div class="card-footer"><a href="#" id="btn_prevencao">Visualizar</a>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE RECOMENDACOES END -->
+
+                        <!-- SUBPAGE NOTICIAS INI -->
+                        <div id="noticias" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_14 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-content">
+                                    <div class="card-content-inner">Content block</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE NOTICIAS END -->
+
+                        <!-- SUBPAGE RECEITAS INI -->
+                        <div id="receitas" class="upage-content vertical-col left hidden page-content">
+                        </div>
+                        <!-- SUBPAGE RECEITAS END -->
+
+                        <!-- SUBPAGE ALIMENTACAO INI -->
+                        <div id="alimentacao" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Petit gateau light</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">
+                                        <p>Tempo de preparo: 6 mins</p>
+                                        <p>Tempo de cozimento: 20 mins</p>
+                                        <p>Tempo total: 26 mins</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="#" id="btn_1">Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE ALIMENTACAO END -->
+
+                        <!-- SUBPAGE SINTOMAS INI -->
+                        <div id="sintomas" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Sintomas - Tipo 1</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Fome e sede intensa, boca seca, maior frequência de idas ao banheiro, cansaço sem motivo, dores no corpo, perda de peso e baixa resistência a infecções. Estes sinais são comuns e intensos em muitos pacientes e costumam
+                                        ser uma das primeiras suspeitas pelos médicos.</div>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Sintomas - Tipo 2</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Apresenta as mesmas características, mas de uma forma muito mais sútil. A percepção dos sintomas pode levar meses ou anos até a busca por uma ajuda médica. Por isso é tão importante manter as consultas e exames de rotina
+                                        em dia.</div>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Sintomas - Diagnóstico</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Por se tratar de uma deficiência no sistema de absorção da glicose, o exame indicado é a dosagem de glicose no sague, conhecido como glicemia. A Associação Americana de Diabetes estabelece que valores de glicose até
+                                        99 mg/dL em jejum são normais. Com números de 100 a 125 mg/dL identifica-se o paciente como portador de glicemia de jejum inadequado. Neste caso são feitos exames de teste oral de tolerância à glicose. Se apresentar
+                                        níveis acima de 125 mg/dL é repetido o teste. Com um segundo resultado igual, o paciente é confirmado como diabético. Os resultados acima são analisados com pacientes em jejum. Caso os testes sejam feitos fora do
+                                        jejum, a confirmação do diagnóstico é baseada em resultados superiores a 200 mg/dL com a presença de sintomas.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE SINTOMAS END -->
+                        <!-- SUBPAGE PREVENCAO INI -->
+                        <div id="prevencao" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Prevenção</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Para os casos Tipo 1 não há modelo de prevenção, mas de controle. Como ele é desenvolvido por uma pré-disposição genética, o paciente pode apresentar os sintomas no decorrer da vida, sendo mais comum na infância. Pais
+                                        com diabetes Tipo 1 devem informar ao médico para fazer o rastreamento da disfunção nos filhos. No Tipo 2 existe uma situação conhecida como “pré-diabetes”, onde o paciente possui uma dificuldade em absorver os
+                                        açúcares no sangue, mas seus níveis de glicemia ainda não o colocam como diabético. O quadro pode ser revertido com controle da alimentação e exercícios físicos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_6 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE PREVENCAO END -->
+                        <!-- SUBPAGE TRATAMENTOS INI -->
+                        <div id="tratamentos" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Tratamento</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Por se tratar de uma disfunção metabólica, a forma mais indicada de tratamento é a junção da aplicação de insulina com uma alimentação equilibrada para regular a quantidade de açúcares recebidos e absorvidos pelo organismo.
+                                        Exercícios físicos também ajudam a regular esses níveis. Especificamente, no Tipo 1 é recomendado o uso contínuo de insulina, controlado e calculado de acordo com cada refeição. E no Tipo 2 o uso mais indicado é
+                                        medicação via oral e, quando avaliada a necessidade pelo médico, a combinação com insulina.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE TRATAMENTOS END -->
+                        <!-- SUBPAGE CONSEQUENCIAS INI -->
+                        <div id="consequencias" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Consequências - Fatores de Risco</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Entre os grupos de risco estão pessoas com hábitos alimentares ricos em carboidratos e açúcares, sedentárias, filhos de pais diabéticos Tipo 1 e gestantes. A má-alimentação e a falta de atividade física favorecem o
+                                        desenvolvimento do diabetes Tipo 2, que pode ser controlado, mas é tão prejudicial quanto o Tipo 1. Filhos de pais diabéticos Tipo 1 podem ou não desenvolver a doença. O controle e a vigilância são essenciais para
+                                        descobrir se o descendente tem a mesma deficiência congênita. E as gestantes sofrem grandes mudanças no organismo, podendo desenvolver nesse período um aumento da resistência à ação da insulina. O diabetes gestacional
+                                        pode desaparecer com o fim da gravidez ou persistir após o parto. O feto também corre grandes riscos de nascer com diabetes ou sofrer consequências como deficiência na visão.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_4 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE CONSEQUENCIAS END -->
+                        <!-- SUBPAGE CAUSAS INI -->
+                        <div id="causas" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">O que causa diabetes tipo 1?</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">A causa do diabetes tipo 1 é que o pâncreas não produz insulina em quantidade suficiente, devido a um “ataque” do sistema imune às próprias células que produzem o hormônio. A insulina é uma molécula que ajuda o açúcar,
+                                        que corre pelo corpo no sangue, a entrar nas células que precisam de energia. Sem a insulina, este açúcar não alimenta as células e vai se acumulando na corrente sangüínea. Normalmente, o pâncreas é o órgão encarregado
+                                        de produzir a insulina. Este órgão possui células especiais para a produção de tão importante substância: as células beta. Porém, pode acontecer de que o sistema de defesa do corpo humano ataque estas células beta,
+                                        como se elas fossem nocivas ao organismo, destruindo-as. Tendo as células beta destruídas, o pâncreas não produz insulina em quantidade suficiente. Sem insulina suficiente, o açúcar do sangue não consegue alimentar
+                                        as células e se acumula na corrente, caracterizando o diabetes. Agora, o que faz com que o sistema de defesa do corpo ataque as próprias células beta? Esta é uma pergunta que a ciência ainda estuda como responder.
+                                        Mas já se sabe que alguns fatores, como infecções de vírus e bactérias e substâncias tóxicas em alimentos, podem desencadear esta estranha ação.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">O que causa diabetes tipo 2?</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">A causa do diabetes tipo 2 é que o corpo não consegue utilizar a insulina de maneira adequada. Ou seja, diferentemente do diabetes tipo 1, no diabetes tipo 2 o pâncreas produz insulina. O problema é que ela não realiza
+                                        seu papel de oferecer o açúcar do sangue às células que precisam de energia. Imagine que um cliente esfomeado (células que precisam de energia) peça comida (açúcar) a um garçom (insulina). Tanto o cliente quanto
+                                        o garçom devem conversar na mesma língua, caso contrário um não entende o pedido do outro e o cliente acaba com fome. É quase a mesma coisa no diabetes tipo 2. A comunicação entre a insulina e as células se dá através
+                                        de receptores de insulina presentes na superfície destas células. Quando estes receptores não reconhecem ou a insulina ou o “pedido” da célula, o açúcar não consegue ser transportado até elas e se acumula no sangue.
+                                        O que causa a falta de comunicação eficiente através dos receptores de insulina ainda é um mistério. Porém, é sabido que certos fatores aumentam as chances de se desenvolver diabetes tipo 2. São eles: *Ter pressão
+                                        alta *Ter colesterol alto *Estar acima do peso *Ter parentes próximos com diabetes tipo 2
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE CAUSAS END -->
+
+                        <!-- SUBPAGE INFORMACOES INI -->
+                        <div id="informacoes" class="upage-content vertical-col left hidden page-content">
+
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Não tenho sintomas. Preciso fazer o teste de glicemia?</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Mesmo sem apresentar qualquer sintoma no decorrer da vida, o recomendado é que ele seja feito a partir dos 45 anos. Com resultados normais, só será preciso refazê-lo a cada 3 anos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">A única restrição alimentar para o diabético é não comer doces?</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Não. Além dos açúcares conhecidos popularmente como o originado da cana-de-açúcar, que servem para cozinhar doces, há os que estão presentes nas frutas e até alguns legumes como beterraba e cenoura, os carboidratos
+                                        que vem dos pães e massas e as bebidas alcoólicas. Para controlar a alimentação é preciso entender que esses alimentos se transformam em “açúcares” no organismo e também devem ser ingeridos moderadamente.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Diabetes tem cura?</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Por se tratar de um problema congênito, o diabetes Tipo 1 é crônico e precisa de tratamento por toda a vida. Já o Tipo 2 pode ser prevenido em um cenário pré-diabético – quando existe a dificuldade em absorver os açúcares
+                                        no sangue – com controle da alimentação e atividade física.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Tenho diabetes. Isso quer dizer que meu filho também terá?</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Depende. O diabetes Tipo 1 é congênito, ou seja, uma deficiência dos genes que passa de pai para filho e não possui cura, mas é controlável com medicação e hábitos saudáveis. Por ser uma deficiência, ela define uma
+                                        pré-disposição ao desenvolvimento da doença, podendo aparecer ou não. Já o diabetes Tipo 2 é adquirido baseado no estilo de vida (alimentação, sedentarismo e obesidade). Como muitos pais repassam aos seus filhos
+                                        os hábitos da família, não é incomum encontrar situações em que pais e filhos possuam diabetes Tipo 2.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card widget uib_w_12 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Fui diagnosticado com diabetes. Tenho direito a receber gratuitamente a medicação?</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Sim. O SUS é obrigado a fornecer os medicamentos necessários para o tratamento. Por se tratar de uma doença com possibilidade de cronicidade e de alto controle, a Lei Federal nº 11.347 de 2006 garante este direito,
+                                        sendo necessário estar cadastrado no SUS como paciente de diabetes e estar inscrito em um dos programas de educação especial em diabetes.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_8 row-height-8" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE INFORMACOES END -->
+
+                        <!-- SUBPAGE DETALHES INI -->
+                        <div id="detalhes" class="upage-content vertical-col left hidden page-content">
+                            <div class="card widget uib_w_18 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Modo de preparo</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner" id="preparo">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
+                                <div class="col uib_col_10 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                    <div class="widget-container content-area vertical-col">
+                                        <span class="uib_shim"></span>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE DETALHES END -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- PAGE DIABETES END -->
+
+            <!-- PAGE CANCER INI -->
+            <div class="upage vertical-col left hidden view" id="cancer">
+                <div class="pages">
+
+                    <div class="page navbar-fixed">
+                        <div class="navbar inner-element uib_w_8" data-uib="framework7/header" data-ver="0">
+                            <div class="navbar-inner">
+                                <div class="left">
+                                    <div class="left">
+                                        <a href="#" id="btn_voltar2" class="link icon-only">
+                                            <i class="icon icon-back"></i>
+                                        </a>
+                                        <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                    </div>
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                                <div class="center labeltext">Câncer de Prostata</div>
+                                <div class="right">
+                                    <div class="widget-container content-area horiz-area wrapping-col"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content upage-content content-area" id="page_101_93">
+                            <div class="card widget uib_w_15 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Titulo</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Content block</div>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_15 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Titulo</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Content block</div>
+                                </div>
+                            </div>
+                            <div class="card widget uib_w_15 d-margins" data-uib="framework7/cards" data-ver="0">
+                                <div class="card-header">Titulo</div>
+                                <div class="card-content">
+                                    <div class="card-content-inner">Content block</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toolbar inner-element uib_w_9" data-uib="framework7/footer" data-ver="0">
+                            <div class="toolbar-inner container-group">
+                                <a href="" id="btn_informacoes2">Informações</a>
+                                <a href="" id="btn_recomendacoes2">Recomendações</a>
+                                <a href="" id="btn_noticias2">Notícias</a>
+                            </div>
+                        </div>
+                        <!-- SUBPAGE RECOMENDACOES INI -->
+                        <div id="recomendacoes2" class="upage-content vertical-col left hidden page-content"></div>
+                        <!-- SUBPAGE RECOMENDACOES END -->
+                        <!-- SUBPAGE NOTICIAS INI -->
+                        <div id="noticias2" class="upage-content vertical-col left hidden page-content"></div>
+                        <!-- SUBPAGE NOTICIAS END -->
+                        <div id="sintomas2" class="upage-content vertical-col left hidden page-content"></div>
+                        <div id="causas2" class="upage-content vertical-col left hidden page-content"></div>
+                        <div id="tratamentos2" class="upage-content vertical-col left hidden page-content"></div>
+                        <div id="consequencias2" class="upage-content vertical-col left hidden page-content"></div>
+                        <div id="receitas2" class="upage-content vertical-col left hidden page-content"></div>
+                        <div id="alimentacao2" class="upage-content vertical-col left hidden page-content"></div>
+                        <div id="prevencao2" class="upage-content vertical-col left hidden page-content"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- PAGE CANCER END -->
+
+            <!-- PAGE MAPS INI -->
+            <div class="upage vertical-col left hidden view" id="maps">
+                <div class="pages">
+
+                    <div class="page">
+                        <div class="page-content upage-content content-area" id="page_94_59">
+                            <div class="widget uib_w_16 maps-size d-margins" data-uib="media/google_maps" data-ver="0" data-rpath="null" data-zoom="8" id="map"></div>
+                            <a class="widget uib_w_17 d-margins button button-big button-round button-fill" data-uib="framework7/button" data-ver="0" id="btn_capturar"><span>capturar</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- PAGE MAPS END -->
+        </div>
+        <script type="application/javascript" src="framework7/my-app.js"></script>
+    </body>
+
+</html>
