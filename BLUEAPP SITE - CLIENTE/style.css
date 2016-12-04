@@ -3,7 +3,8 @@
 body {
 	font-family: 'Montserrat', sans-serif;
     /*font-family: 'Open Sans', sans-serif;*/
-    font-size: 12pt;
+    font-size: 11pt;
+
 }
  
 .navbar {
@@ -39,6 +40,10 @@ span.rosa {
 	color: #ffffff;
 }
 
+.navbar-toggle {
+	margin-top: 15px;
+}
+
 .nav > li > a {
 	height: 70px;
 	padding: 20px;	
@@ -49,13 +54,20 @@ span.rosa {
 }
 
 .carousel-indicators li {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
 }
 
 .carousel-indicators .active {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+
+.carousel-control {
+	opacity: .5;
+	background-image: none !important;
 }
 
 .footer {
@@ -90,9 +102,9 @@ ul {
 }
 
 h1 {
-	font-size: 40pt;
+	font-size: 35pt;
 	text-align: center;
-	margin-bottom: 55px;
+	margin-bottom: 30px;
 	border-bottom: 3px solid #ff5252;
 	line-height: 200%;
 }
@@ -102,9 +114,58 @@ h2 {
 }
 
 p {
-	font-size: 12pt;
+	font-size: 11pt;
 }
 
 img {
 	margin-bottom: 20px;
 }
+
+/*ativação*/
+.ativado {	
+	background-color: #fff !important;
+}
+
+.ativado a{
+    color:#f15837 !important;
+}
+
+.ativado a:link{
+    color:#f15837 !important;
+}
+
+.ativado a:focus{
+    color:#f15837 !important;
+}
+
+.ativado a:hover{
+    color:#f15837 !important;
+}
+
+
+/*media */
+@media (min-width: 360px) and (max-width: 767px) {
+	.carousel-indicators li {
+		display: none;
+	}
+
+	.carousel-indicators .active {
+		display: none;
+	}
+	.secao {
+		padding: 50px 30px 0px 30px;
+	}
+
+	h1 {
+		font-size: 33px;
+	}
+}
+
+@media  (min-width:767px) {
+	.navbar-brand {
+		font-size: 18px !important;
+	}
+}
+
+
+/* fim media  */

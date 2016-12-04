@@ -42,6 +42,27 @@
 			} // End if
 			});
 			});
+
+			$('.nav a').on('click', function(){
+    		$('.btn-navbar').click(); //bootstrap 2.x
+    		$('.navbar-toggle').click() //bootstrap 3.x by Richard
+			});
+		</script>
+
+		<script>
+			$(function() {
+			    $('.nav a').on('click', function(){ 
+			        if($('.navbar-toggle').css('display') !='none'){
+			            $(".navbar-toggle").trigger( "click" );
+			        }
+			    });
+			});
+	    </script>
+
+  		<script>
+			$('.maps').click(function () {
+		    $('.maps iframe').css("pointer-events", "auto");
+			});
 		</script>
 	</head>
 	<body>
@@ -49,14 +70,21 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			      	</button>
 					<a href="#" class="navbar-brand"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;FARMA LIFE</a>
 				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#quem-somos">Quem somos</a></li>
-					<li><a href="#servicos">Serviços</a></li>
-					<li><a href="#contato">Contato</a></li>
-				</ul>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="ativado"><a href="#myCarousel">Home</a></li>
+						<li><a href="#quem-somos">Quem somos</a></li>
+						<li><a href="#servicos">Serviços</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
@@ -70,13 +98,11 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 
-			<div class="item active">
+			<div class="item">
 			  <img src="img/banner-0.jpg" alt="farmacia">
 			</div>
 
-			<div class="item">
-			  <img src="img/banner-01.jpg" alt="clinica">
-			</div>
+			
 			</div>
 
 			<!-- Left and right controls -->
@@ -93,17 +119,17 @@
 		<!--Quem Somos-->
 		<div class="container-fluid secao" id="quem-somos">
 			<h1>Quem Somos <br> </h1>
-		 	<div class="col-xs-12 col-md-3 col-md-offset-1">
+		 	<div class="col-xs-12 col-sm-7  col-md-3 col-md-offset-1">
 		 	   	<h2>Missão</h2>
 		 	   	<img src="img/missao.jpg" alt="" class="img-responsive">
 		 		<p>Somos a farmácia-clínica <span class="rosa">FARMA LIFE</span>, fundado em 2016 atuando com venda de medicamentos e atendimentos clínicos. Graças ao <span class="rosa">Mário Farma</span> estabeleceu se um novo conceito de clínica.</p>
 		 	</div>
-		 	<div class="col-xs-12 col-md-3">
+		 	<div class="col-xs-12 col-sm-7 col-md-3">
 		 	   	<h2>Visão</h2>
 		 	   	<img src="img/visao.jpg" alt="" class="img-responsive">
 		 		<p>A nossa intenção é ampliar ainda mais este <span class="rosa">novo conceito</span> de farmácia-clínica do ilustríssimo Mário Farma para atender os clientes com alta eficiência e eficácia.</p>
 		 	</div>
-		 	<div class="col-xs-12 col-md-3">
+		 	<div class="col-xs-12 col-sm-7 col-md-3">
 		 	   	<h2>Valor</h2>
 		 	   	<img src="img/valor.jpg" alt="" class="img-responsive">
 		 		<ul>
@@ -117,9 +143,9 @@
 		<!-- Serviços-->	
 		<div class="container-fluid secao" id="servicos">
 			<h1>Serviços</h1>
-			<div class="col-xs-12 col-md-4 col-md-offset-2">
+			<div class="col-xs-12 col-sm-7 col-md-4 col-md-offset-2">
 				<h2>Clínica</h2>
-	 	    	<img src="http://placehold.it/500x300/000/fff" alt="" class="img-responsive">
+	 	    	<img src="img/atendimento.jpg" alt="" class="img-responsive">
 	 	    	<p>Contamos com médicos qualificados para realizar <span class="rosa">atendimentos de qualidade</span> aos nossos clientes:</p>
 	 	    	<ul>
 	 	    		<li>Reconhecidos pelo ótimo trabalho</li>
@@ -127,9 +153,9 @@
 	 	    		<li>Respeitam e compreendem os pacientes</li>
 	 	    	</ul>
 			</div>
-			<div class="col-xs-12 col-md-4">
+			<div class="col-xs-12 col-sm-7 col-md-4">
 				<h2>Farmácia</h2>
-		 		<img src="http://placehold.it/500x300/000/fff" alt="" class="img-responsive">
+		 		<img src="img/medicamento.jpg" alt="" class="img-responsive">
 				<p>Temos na nossa farmácia, <span class="rosa">diversos medicamentos</span> para vários perfis de clientes:</p>
 				<ul>
 					<li>Compra simples e ágil</li>
@@ -141,7 +167,8 @@
 		<!--Contato-->
 		<div class="container-fluid secao" id="contato">
 			<h1>Contato</h1>
-			<div class="col-xs-12 col-md-5">		
+			<div class="col-xs-12 col-sm-7 col-md-5">
+				<h2>Formulário</h2>			 
 				<div class="form-group">
 					<label for="nome">Nome</label>
 					<input type="text" class="form-control" id="nome" placeholder="Digitar seu nome">
@@ -159,18 +186,26 @@
 					<textarea class="form-control" id="mensagem" placeholder="Digitar mensagem"></textarea>
 					<br>
 					<button type="sumbit" class="btn btn-primary">Enviar</button>
-				</div>
+				</div>	
 			</div>
 
-					<!-- google maps, desativar scroll-->
-				</div>
+			<div class="col-xs-12 col-sm-7 col-md-7 maps">
+				<h2>Endereço</h2>			 
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6928258672847!2d-46.63468548539715!3d-23.543548084691786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58ff663d3d07%3A0x26afc2d8c04e9337!2sRua+25+de+Mar%C3%A7o+-+Centro%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1480855741145" width="100%" height="380" frameborder="0" style="pointer-events:none;border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 
 		<footer class="footer">
 			<div class="container">
-				<span class="text-muted">FARMA LIFE 2016 ©&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Todos direitos reservados</span>		
+				<span class="text-muted">FARMA LIFE 2016 ©&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Todos direitos reservados</span>	
 			</div>
 		</footer>
+		
+		<script>
+	        $(".nav a").on("click", function() {
+	            $(".nav").find(".ativado").removeClass("ativado");
+	            $(this).parent().addClass("ativado");
+	        });
+		</script>
 	</body>
 </html>
